@@ -1,4 +1,4 @@
 # html_css
  curso de html e css do curso em video
 
-junto ao curso de javascript
+Desafio 10 do curso: https://paulo-dk.github.io/html_css/desafio010/
