@@ -20,6 +20,7 @@ header {
     font-style: normal;
     padding: 15px;
     color: white;
+    margin-bottom: 60px;
 }
 
 header>h1 {
@@ -42,33 +43,64 @@ main {
     font-family: "Sriracha";
     font-weight: 400;
     font-style: normal;
+    font-size: 1.5em;
     background-color: white;
-    padding-left: 20px;
-}
-
-main p {
-    padding: 20px;
-    margin: 20px 0px;
-    width: 400px;
     line-height: 2.5em;
 }
 
+main p {
+    padding: 0px 0px 60px 30px;
+    width: 350px;
+}
+
+@media (max-width:700px) {
+    main {
+        font-size: 1.1em;
+    }
+
+    main p {
+        width: 300px;
+    }
+
+    .imagem p {
+        width: 300px;
+    }
+}
+
+@media (min-width:700px) and (max-width:900px) {
+    main {
+        font-size: 1.3em;
+    }
+
+    main p {
+        width: 350px;
+    }
+
+    .imagem p {
+        width: 350px;
+    }
+}
+
 .imagem {
-    padding: 10px;
+    padding: 60px 20px;
+    box-shadow: 2px 2px 2px rgba(23, 22, 22, 0.47);
+    margin-bottom: 60px;
 }
 
 .imagem>p {
     background-color: rgba(46, 40, 40, 0.38);
-    height: 350px;
-    margin: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 0px;
+
 }
 
-div#img1 {
+section#img1 {
     background: azure url(imagens/background001.jpg) center center no-repeat fixed;
     background-size: cover;
 }
 
-div#img2 {
+section#img2 {
     background: azure url(imagens/background002.jpg) center center no-repeat fixed;
     background-size: cover;
 }
