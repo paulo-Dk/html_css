@@ -2,116 +2,105 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
+html,
 body {
-    height: 100vh;
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: white;
 }
 
 header {
-    background-color: rgb(80, 75, 75);
-    height: 150px;
+    background-color: rgb(37, 35, 35);
     text-align: center;
-    font-family: "Passion One";
-    font-style: normal;
-    padding: 15px;
     color: white;
-    margin-bottom: 60px;
 }
 
 header>h1 {
+    font-family: var(--fonte2);
     font-size: 3em;
-    padding: 10px 0px;
-    font-weight: bold;
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
 header>p {
-    font-size: 1em;
-    font-weight: lighter;
+    padding-bottom: 50px;
 }
 
-header a {
+a {
     text-decoration: none;
     color: white;
+    font-weight: bolder;
 }
 
-main {
-    font-family: "Sriracha";
-    font-weight: 400;
-    font-style: normal;
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonte3);
     font-size: 1.5em;
-    background-color: white;
-    line-height: 2.5em;
+    line-height: 2em;
+    padding: 10vh 0vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
 
-main p {
-    padding: 0px 0px 60px 30px;
-    width: 350px;
-}
-
-@media (max-width:700px) {
-    main {
-        font-size: 1.1em;
-    }
-
-    main p {
-        width: 300px;
-    }
-
-    .imagem p {
-        width: 300px;
-    }
-}
-
-@media (min-width:700px) and (max-width:900px) {
-    main {
-        font-size: 1.3em;
-    }
-
-    main p {
-        width: 350px;
-    }
-
-    .imagem p {
-        width: 350px;
-    }
+section>p {
+    padding-bottom: 2em;
 }
 
 .imagem {
-    padding: 60px 20px;
-    box-shadow: 2px 2px 2px rgba(23, 22, 22, 0.47);
-    margin-bottom: 60px;
+    padding-left: 20px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.675);
 }
 
 .imagem>p {
     background-color: rgba(46, 40, 40, 0.38);
     color: white;
-    padding-left: 10px;
-    padding-bottom: 0px;
-
+    padding: 10px;
+    display: inline-block;
+    text-shadow: 1px 1px 0px black;
 }
 
 section#img1 {
-    background: azure url(imagens/background001.jpg) center center no-repeat fixed;
+    background: azure url(imagens/background001.jpg) right center no-repeat fixed;
     background-size: cover;
 }
 
 section#img2 {
-    background: azure url(imagens/background002.jpg) center center no-repeat fixed;
+    background: azure url(imagens/background002.jpg) right center no-repeat fixed;
     background-size: cover;
 }
 
+@media (max-width:700px) {
+    section {
+        font-size: 1.3em;
+    }
+
+}
+
+@media (min-width:700px) and (max-width:900px) {
+    section {
+        font-size: 1.4em;
+    }
+
+}
+
 footer {
-    background-color: rgb(80, 75, 75);
-    height: 40px;
+    background-color: rgb(37, 35, 35);
     text-align: center;
-    font-family: "Passion One";
-    font-style: normal;
-    font-weight: lighter;
     padding: 10px;
     color: white;
 }
