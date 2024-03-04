@@ -11,13 +11,13 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-<body>
+<body onresize="mudou()">
     <header>
         <h1>Meu site</h1>
-        <span class="material-symbols-outlined" id="rol">
+        <span class="material-symbols-outlined" id="rol" onclick="abrir()">
             menu
         </span>
-        <menu>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -61,20 +61,21 @@
     </main>
 
     <script>
-        let menu = document.querySelector("menu");
-        let rol = document.querySelector("#rol");
-
-        
-        rol.addEventListener("click", () => {
-            if (menu.style.display == 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'block';
+        function mudou() {
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
             }
-            
-        });
+        }
+        function abrir() {
+            if (itens.style.display == 'none') {
+                itens.style.display = 'block';
 
-
+            } else {
+                itens.style.display = 'none';
+            }
+        }
     </script>
 
 </body>

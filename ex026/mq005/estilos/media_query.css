@@ -10,14 +10,25 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    /*tablet*/
+@media screen and (min-width: 768px) {
+    /*telas maiores*/
 
+    span#rol {
+        display: none;
+    }
 
-}
+    menu {
+        display: block;
+    }
 
-@media screen and (min-width: 1201px) {
-    /*tv*/
+    menu>ul>li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    main {
+        width: 768px;
+    }
 
 
 }

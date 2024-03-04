@@ -24,7 +24,7 @@ header>h1 {
     text-align: center;
 }
 
-span#rol{
+span#rol {
     background-color: rgb(54, 54, 54);
     display: block;
     color: white;
@@ -33,7 +33,7 @@ span#rol{
     cursor: pointer;
 }
 
-#rol:hover{
+#rol:hover {
     background-color: lightgrey;
     color: black;
 }
@@ -61,7 +61,7 @@ menu a:hover {
     background-color: gray;
 }
 
-main{
+main {
     width: 90vw;
     background-color: white;
     margin: auto;
@@ -71,11 +71,11 @@ main{
     border-radius: 10px;
 }
 
-article h2{
+article h2 {
     padding-bottom: 10px;
 }
 
-article p{
+article p {
     text-align: justify;
     margin-bottom: 10px;
     text-indent: 20px;
